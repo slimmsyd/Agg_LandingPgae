@@ -9,10 +9,8 @@
 </head>
 <body>
 
-    
 
-    <div id  class = "image-1">
-
+    <div class = "navigation">
         <div class = "nav-1">
             <a href = "#" id = "shopOne">SHOP WHOSALE</a>
         </div>
@@ -21,24 +19,37 @@
             <a href = "#" id = "shopTwo">BOOK 1 ON 1</a>
         </div>
 
+    </div>
 
-        <div class = "line"></div>
+
+    <div id  class = "image-1">
+
+        <svg style='width: 100%; height: 100%;'> d
+            <line x1="0" y1="100%" x2="100%" y2="0"
+                style="stroke:white;stroke-width:4"/>
+            </svg>
+
+
+    
+
+
 
     </div>
 
 
+    <div class="testDiv">
+       
+    </div>
+
+
     <div class = "image-2">
+        <svg style='width: 100%; height: 100%;'>
+            <line x1="0" y1="100%" x2="100%" y2="0"
+                style="stroke:black;stroke-width:4"/>
+            </svg>
 
-        <div class = "nav-1">
-            <a href = "#"  id = "shopOne2">SHOP WHOSALE</a>
-        </div>
+     
 
-        <div class = "nav-2">
-            <a href = "#"  id = "shopTwo-3">BOOK 1 ON 1</a>
-        </div>
-
-
-        <div class = "line"></div>
 
     </div>
     </div>
@@ -60,6 +71,13 @@
     
 </body>
 <style>
+
+    .testDiv { 
+        position: absolute;
+        z-index: 10;
+    }
+
+
     /* MOBILE */
     .mobile-view { 
         display: none;
@@ -79,6 +97,20 @@
         
     }
  
+        .navigation { 
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            z-index: 20;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+        }
     .image-2 { 
         opacity: 0;
         width: 100%;
@@ -117,7 +149,7 @@
         background: url('/assets/image_1.png');
         gap: 90px;
         position: absolute;
-        transition: all 1.5s ease-in-out;
+        transition: all 2s ease-in-out;
 
         opacity: 1;
         z-index: 2;
@@ -145,9 +177,7 @@
     }
 
 @media screen and (max-width: 1024px) {
-    .nav-2 { 
-        margin-top: 6rem;
-    }
+
 }
  @media screen and (max-width: 779px) {
     .image-1, .image-2 { 
@@ -184,7 +214,12 @@
         align-items: center;
         justify-content: center;
     }
-
+    .navigation  {
+        display: none;
+    }
+    .nav-2 { 
+        margin-top: 6rem;
+    }
 
  }
 </style>
@@ -208,7 +243,7 @@
       
 
     })
-    const shop_one_2 = document.getElementById("shopOne2")
+    const shop_one_2 = document.getElementById("shopOne")
     shop_one_2.addEventListener("mouseover", () => {
         console.log("this works") 
     

@@ -25,10 +25,10 @@
         </div>
 
         <div class = "container-right"> 
-            <img src= "bookingimage.png" />
+            <img class = "book-image" src= "bookingimage.png" />
 
-            <button >BOOK ONLINE</button>
-            <button>BOOK IN PERSON</button>
+            <button class = "btn" >BOOK ONLINE</button>
+            <button class = "btn">BOOK IN PERSON</button>
         </div>
 
 
@@ -49,10 +49,10 @@
         </div>
 
         <div class = "mobile-container-right"> 
-            <img src= "bookingimage.png" />
+            <img class = "book-image"src= "bookingimage.png" />
 
-            <button >BOOK ONLINE</button>
-            <button >BOOK IN PERSON</button>
+            <button class = "btn" >BOOK ONLINE</button>
+            <button class = "btn" >BOOK IN PERSON</button>
         </div>
 
 
@@ -69,12 +69,12 @@ body {
     font-family: 'Roboto', sans-serif;
 
 }
-h1 { 
+.container-left h1 { 
     font-size: 44px;
     text-align: center;
 }
 
-button { 
+.btn { 
     width: 75%;
     height: 80px;
     background: #292424;
@@ -123,8 +123,9 @@ button {
     .container {
        display: none;
     }
-    h1 {
+    .mobile-container-left h1 {
         font-size: 28px;
+        text-align: center;
     }
 
     .mobile-container {
@@ -141,17 +142,14 @@ button {
         flex-direction: column;
     }
 
-    .mobile-container-right, .mobile-container-left { 
-        /* padding: 0rem 1rem; */
-    }
   
-    img,button{
+    img,.btn{
         width: 95%;
     }
     img { 
         margin-bottom: 1rem;
     }
-    button { 
+    .btn { 
         height: 56px  !important;
         padding: 5px 0px;
         margin: 1rem 0rem !important;
